@@ -3,15 +3,15 @@
 #include<stdio.h>
 #include <string.h>
 int main(){
-    char apass[100];
-    char pass[]="sahil007";
+    char givenpass[100];
+    char realpass[]="sahil007";
     while(1>0){
         printf("enter pass : ");
-        scanf("%s",apass);
-        if(strcmp(apass, pass) == 0){
+        scanf("%s",givenpass);
+        if(strcmp(givenpass, realpass) == 0){
             printf("login succesfull");
             break;
         }
     }
     return 0;
-}
+} 
