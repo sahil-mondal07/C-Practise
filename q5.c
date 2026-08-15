@@ -15,11 +15,11 @@ int main(){
         printf("enter the temp : ");
         scanf("%d",&arr[i]);
     }
-    for(int i=1;i<n;i++){ //iss part me array ka har ek ele ek dusre se compare hoga 
+    for(int i=1;i<n;i++){ //iss part me array ka har ek ele ek dusre se compare hoga and current streak inc hoga and yha pe apan 1 se isliye start kr rhe as we compare the next elemnt to the prev one that why
         if(arr[i]>arr[i-1]){
             cstreak++;
         }
-        else{
+        else{  
             cstreak=1;
         }
         if (cstreak > longstreak) {
