@@ -4,31 +4,30 @@ Output: 4
 Explanation: 14, 16, 18, 20 is the longest increasing streak. */
 
 #include <stdio.h>
-
-int main() {
-
-    int arr[] = {10, 12, 15, 14, 16, 18, 20};
-
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    int current = 1;
-    int longest = 1;
-
-    for(int i = 1; i < n; i++) {
-
-        if(arr[i] > arr[i - 1]) {
-            current++;
+int main(){
+    int n;
+    int cstreak=1;
+    int longstreak=1;
+    printf("enter the no. of temp : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){  //manually input dene ke liye in the array 
+        printf("enter the temp : ");
+        scanf("%d",&arr[i]);
+    }
+    for(int i=1;i<n;i++){ //iss part me array ka har ek ele ek dusre se compare hoga 
+        if(arr[i]>arr[i-1]){
+            cstreak++;
         }
-        else {
-            current = 1;
+        else{
+            cstreak=1;
         }
-
-        if(current > longest) {
-            longest = current;
+        if (cstreak > longstreak) {
+            longstreak = cstreak;
         }
     }
-
-    printf("Longest increasing streak: %d", longest);
-
+    
+    printf("the longest increasing streak : %d ",longstreak);
     return 0;
+
 }
