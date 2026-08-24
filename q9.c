@@ -17,17 +17,28 @@ Output: 10 */
 #include<stdio.h>
 int main(){
     int n;
-    printf("size of array : ");
-    scanf("%d",&n);
     int a[n];
+    printf("enter the size of the array : ")
+    scanf("%d",&n);
     for(int i=0;i<n;i++){
-        printf("enter ele : ");
-        scanf("%d",&a[i]);
+        printf("enter ele (must be in sorted way) : ")
+        scanf("%d",a[i]);
     }
-    for(int j=0;j<n;j++){
-           if(a[j]!=a[j+1]){
-                printf("%d",a[j]);
-           } 
-         }
+    int left = 0;
+    int right = n - 1;
+    while (left < right) {
+
+        int mid = (left + right) / 2;
+        if (mid % 2 != 0) {
+            mid--;
+        }
+        if (a[mid] == a[mid + 1]) {
+            left = mid + 2;
+        }
+        else {
+            right = mid;
+        }
+    }
+    printf("Single element: %d", a[left]);
     return 0;
 }
