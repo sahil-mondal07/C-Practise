@@ -4,6 +4,7 @@ k=3
 input : {1,2,3,4,5,6,7}
 output : {5,6,7,1,2,3,4}
 */
+// We are using triple reversal technique
 
 #include<stdio.h>
 int main(){
