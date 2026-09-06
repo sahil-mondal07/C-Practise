@@ -10,9 +10,10 @@ int main(){
     int longstreak=1;
     printf("enter the no. of temp : ");
     scanf("%d",&n);
+    
     int arr[n];
+    printf("enter the temp : ");
     for(int i=0;i<n;i++){  //manually input dene ke liye in the array 
-        printf("enter the temp : ");
         scanf("%d",&arr[i]);
     }
     for(int i=1;i<n;i++){ //iss part me array ka har ek ele ek dusre se compare hoga and current streak inc hoga and yha pe apan 1 se isliye start kr rhe as we compare the next elemnt to the prev one that why
