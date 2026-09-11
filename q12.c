@@ -1,4 +1,4 @@
-/*  print the pattern 
+/* q10  print the pattern 
 
   *****
   *   *
