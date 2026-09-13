@@ -1,4 +1,4 @@
-/*remove duplicates from sorted array , without using any extra space */
+/*q12 remove duplicates from sorted array , without using any extra space */
 
 //similar concept of 2 pointers.
 
