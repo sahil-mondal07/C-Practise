@@ -62,6 +62,7 @@ int main(){
     scanf("%d",&n);
     printf("enter the size of arr2 : ");
     scanf("%d",&m);
+    printf("ele must be in sorted array");
     int arr1[n];
     int arr2[m];
     printf("enter the ele of the 1st arr : ");
@@ -89,6 +90,7 @@ int main(){
         k++;
     }
 
+    // to insert the remaining ele left in any array 
     while(z<n){
         merged[k]=arr1[z];
         z++;
@@ -100,6 +102,8 @@ int main(){
         k++;
     }
 
+    // median calc.
+    
     double median;
     if(total%2!=0){
         median=(total+1)/2;
