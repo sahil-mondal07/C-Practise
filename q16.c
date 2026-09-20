@@ -22,7 +22,6 @@ int main(){
     if(mindiff<0){
         mindiff=-mindiff;
     }
-
     for(int k=0;k<n;k++){
         for(int h=0;h<m;h++){
             int diff=arr1[k]-arr2[h];
@@ -35,6 +34,5 @@ int main(){
         }
     }
     printf("minimum difference = %d", mindiff);
-
     return 0;
 }

@@ -1,0 +1,1 @@
+/* q15  wap to detect a cycle in a linked list */
